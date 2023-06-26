@@ -1,0 +1,128 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
+body {
+  background: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  width: 608px;
+  height: 100%;
+  padding: 16px 16px 0px 16px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card_photo {
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  margin-top: 32px;
+}
+
+.user_photo {
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.user_name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user_posted {
+  position: absolute;
+  right: 0;
+  color: #7c7c7c;
+  font-size: 14px;
+}
+
+.post_header {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.post_content {
+  color: #7c7c7c;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.read_more {
+  max-width: 110px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.read_more_text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.read_more_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.read_more:hover {
+  color: rgba(18, 99, 206, 0.867);
+  fill: rgba(18, 99, 206, 0.867);
+}
+/* RWD */
+@media only screen and (max-width: 700px) {
+  .main {
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px 50px 0px 50px;
+  }
+  .card_photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .user_name .user_posted {
+    font-size: 12px;
+  }
+
+  .post_header {
+    font-size: 18px;
+  }
+
+  .post_content {
+    font-size: 14px;
+  }
+
+  .read_more_text {
+    font-size: 14px;
+  }
+}
